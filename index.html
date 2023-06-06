@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg" href="http://ney.lh/css/Notitas_icono.svg">
-  <title>List</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="icono.svg">
+    <title>3 examples</title>
+  </head>
+  <body>
+    <div class="container-elements">
+      <h1> Ejemplo animateMotion </h1>
+      <div class="container">
+        <svg viewbox="0 0 200 100">
+          <path
+            fill="none"
+            stroke="white"
+            d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+          <circle class="color-circle" r="10" fill="blue">
+            <animateMotion
+              dur="10s"
+              repeatCount="indefinite"
+              path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+          </circle>
+        </svg>
+      </div>
+
+      <h1> Ejemplo animate </h1>
+      <div class="container">
+        <svg class="rect-element" viewbox="0 0 10 10">
+          <rect class="rect-color" width="10" height="10">
+            <animate
+              attributeName="rx"
+              values="0;5;0"
+              dur="5s"
+              repeatCount="indefinite" />
+          </rect>
+        </svg>
+      </div>
+
+      <h1> Ejemplo animation y @keyfrmes </h1>
+      <div class="container">
+        <div class="s-shaped-movement"></div>
+      </div>
+
+      <h1> Ejemplo de ney mezclando todo </h1>
+      <div class="container-flowers">
+          <svg class="flower" viewbox="0 0 200 200">
+            <circle fill="white" cx="50" cy="50" r="50" />
+            <circle fill="white" cx="150" cy="50" r="50" />
+            <circle fill="white" cx="50" cy="150" r="50" />
+            <circle fill="white" cx="150" cy="150" r="50" />
+            <circle class="color-circle-flower" fill="yellow" cx="100" cy="100" r="45" />
+          </svg>
+          <svg class="flower" viewbox="0 0 200 200">
+            <circle fill="white" cx="50" cy="50" r="50" />
+            <circle fill="white" cx="150" cy="50" r="50" />
+            <circle fill="white" cx="50" cy="150" r="50" />
+            <circle fill="white" cx="150" cy="150" r="50" />
+            <circle class="color-circle-flower" fill="yellow" cx="100" cy="100" r="45" />
+          </svg>
+          <svg class="flower" viewbox="0 0 200 200">
+            <circle fill="white" cx="50" cy="50" r="50" />
+            <circle fill="white" cx="150" cy="50" r="50" />
+            <circle fill="white" cx="50" cy="150" r="50" />
+            <circle fill="white" cx="150" cy="150" r="50" />
+            <circle class="color-circle-flower" fill="yellow" cx="100" cy="100" r="45" />
+          </svg>
+      </div>
+
+      <h1> Ejemplo Trayectoria vertical </h1>
+      <div class="container">
+        <svg viewbox="0 0 100 300">
+          <path d="M 0 2 Q 80 0, 25 50 T 40 120 T 34 180 T 60 240"
+                fill="none" stroke="white" stroke-width="1.5" fill="transparent"/>
+          <g>
+            <circle fill="white" cx="5" cy="5" r="5" />
+            <circle fill="white" cx="15" cy="5" r="5" />
+            <circle fill="white" cx="5" cy="15" r="5" />
+            <circle fill="white" cx="15" cy="15" r="5" />
+            <circle class="color-circle-flower" fill="yellow" cx="10" cy="10" r="4" />
+            <animateMotion
+              dur="10s"
+              repeatCount="indefinite"
+              path="M 0 2 Q 80 0, 25 50 T 40 120 T 34 180 T 60 240" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </body>
 </html>

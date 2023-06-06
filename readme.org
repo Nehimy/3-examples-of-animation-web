@@ -1,0 +1,58 @@
+* Hola
+** viewbox:
+El valor del atributo viewBox es una lista de cuatro números: min-x, min-y, ancho y alto. Los números min-x y min-y representan las coordenadas superiores izquierdas de la ventana gráfica. Los números ancho y alto representan sus dimensiones. Estos números, que están separados por espacios en blanco y/o una coma, especifican un rectángulo en el espacio del usuario que se asigna a los límites de la ventana gráfica establecida para el elemento SVG asociado (no la ventana gráfica del navegador).
+
+** path
+
+El elemento <path> se utiliza para definir una ruta.
+
+Los siguientes comandos están disponibles para los datos de ruta:
+
+     M = mover a
+     L = línea hasta
+     H = línea horizontal hasta
+     V = línea vertical a
+     C = curva a
+     S = curva suave
+     Q = curva de Bézier cuadrática
+     T = curva de Bézier cuadrática suave
+     A = arco elíptico
+     Z = camino cerrado
+
+Nota: Todos los comandos anteriores también se pueden expresar con letras minúsculas. Las letras mayúsculas significan posiciones absolutas, las minúsculas significan posiciones relativas.
+
+** stroke:
+Color de trazo o linea, refierace a al dorde o delineado de la figura.
+
+** attributeName :
+El atributo atributoName indica el nombre de la propiedad CSS o el atributo del elemento de destino que se va a cambiar durante una animación.
+
+** values:
+El atributo de valores tiene diferentes significados, según el contexto en el que se use, ya sea que define una secuencia de valores utilizados en el transcurso de una animación o es una lista de números para una matriz de color, que se interpreta de manera diferente según el tipo de cambio de color a realizar.
+Puede usar este atributo con los siguientes elementos SVG:
+
+    <animate>
+    <animateMotion>
+    <animateTransform>
+    <feColorMatrix>
+
+
+** dur:
+El atributo dur indica la duración simple de una animación.
+
+Puede usar este atributo con los siguientes elementos SVG:
+    <animate>
+    <animateMotion>
+    <animateTransform>
+    <set>
+** repeatCount:
+El atributo repeatCount indica el número de veces que tendrá lugar una animación.
+
+Puede usar este atributo con los siguientes elementos SVG:
+    <animate>
+    <animateMotion>
+    <animateTransform>
+    <set>
+
+**  offset-path :
+La propiedad CSS offset-path especifica una ruta de movimiento para que siga un elemento y define el posicionamiento del elemento dentro del contenedor principal o sistema de coordenadas SVG.

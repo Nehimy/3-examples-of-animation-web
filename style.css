@@ -1,7 +1,5 @@
-/*
-   El valor border-box en el box-sizing hace que el padding y el border pasen a formar parte
-   del cálculo del ancho de la caja.
- */
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
 
 *{
   margin: 0px;
@@ -9,3 +7,92 @@
   box-sizing: border-box;
 }
 
+body {
+    background: #1f2337;
+}
+
+.container-elements {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    font-family: 'Cherry Bomb One', cursive;
+    text-align: center;
+    color: #5fa5ff;
+    color: #70afff;
+}
+
+.container {
+    display: grid;
+    place-content: center;
+
+}
+
+svg {
+    display: grid;
+    width: 20vw;
+}
+
+.color-circle {
+    fill: #3fe1d2;
+}
+
+.rect-element {
+    width: 50px;
+}
+
+.rect-color {
+    fill: #ffb555;
+}
+
+.s-shaped-movement {
+    offset-path: path('M20,20 C20,100 200,0 200,100');
+    animation: move 3000ms infinite alternate ease-in-out;
+    width: 40px;
+    height: 40px;
+    background: #ff74dc;
+    margin-bottom: 100px;
+}
+
+/* Figura x*/
+.container-flowers {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    place-content: center;
+
+}
+
+.flower{
+    display: grid;
+    height: 30px;
+    /* offset-path: path('M20,170 L100,20 L180,100 Z'); */
+    offset-path: path('M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0');
+    animation: freefall 5s infinite alternate ease-in-out;
+    margin-bottom: 155px;
+}
+
+  .color-circle-flower {
+      fill: #FF24DC;
+      fill: #FFDD24;
+  }
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes freefall {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
