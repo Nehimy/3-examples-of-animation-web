@@ -56,3 +56,5 @@ Puede usar este atributo con los siguientes elementos SVG:
 
 **  offset-path :
 La propiedad CSS offset-path especifica una ruta de movimiento para que siga un elemento y define el posicionamiento del elemento dentro del contenedor principal o sistema de coordenadas SVG.
+* Imagen de la mejor animación de estos ejemplos
+[[https://imgur.com/3z1LyDy]]
