@@ -63,11 +63,7 @@ La propiedad CSS offset-path especifica una ruta de movimiento para que siga un 
 * Video
 
 
-[
-[https://youtu.be/km0GdIvonYQ]
-[https://imgur.com/ejadJ6H.png
-]
-
+[[https://youtu.be/km0GdIvonYQ] [https://imgur.com/ejadJ6H.png]]
 
 
 [[https://imgur.com/ejadJ6H][https://youtu.be/km0GdIvonYQ]]
