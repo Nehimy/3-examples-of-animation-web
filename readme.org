@@ -59,3 +59,6 @@ La propiedad CSS offset-path especifica una ruta de movimiento para que siga un 
 * Imagen de la mejor animación de estos ejemplos
 
 [[https://imgur.com/3z1LyDy.png]]
+
+* Video
+[[https://imgur.com/gefOoRz.png][https://youtu.be/km0GdIvonYQ]]
